@@ -25,7 +25,6 @@
       <br>
       <br>
       <a href="mailto:juskinbo@outlook.com">Outlook</a>, <a href="mailto:gjiangyufan@gmail.com">Gmail</a>
-      
     </p>
   </div>
 </template>
