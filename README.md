@@ -1,24 +1,24 @@
 # home-juskinbo
 
-## Project setup
-```
-yarn install
-```
+Juskinbo's homepage。
 
-### Compiles and hot-reloads for development
+# Development
+
 ```
+git clone https://github.com/Juskinbo/home-juskinbo.git && cd home-juskinbo
+yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
+## Build
+
 ```
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## Config
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Open the infoconfig.json file in the root directory.
+
+
+
