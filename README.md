@@ -5,7 +5,8 @@ Juskinbo's homepage。
 # Development
 
 ```shell
-git clone https://github.com/Juskinbo/home-juskinbo.git && cd home-juskinbo
+git clone https://github.com/Juskinbo/home-juskinbo.git
+cd home-juskinbo
 yarn install
 yarn serve
 ```
