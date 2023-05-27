@@ -34,27 +34,15 @@ Open the infoconfig.json file in the root directory.
   "links": [
     {
       "index": 1,
-      "title": "Home",
-      "icon": "https://s2.loli.net/2023/05/26/vamwe9r4CxDb2LQ.png",
-      "url": "/"
-    },
-    {
-      "index": 2,
       "title": "Blog",
       "icon": "https://s2.loli.net/2023/05/26/Q5yxwOA1MspRbV9.png",
       "url": "https://blog.juskinbo.cn"
     },
     {
-      "index": 3,
-      "title": "Memos",
-      "icon": "https://s2.loli.net/2023/05/26/tV5vOPBKY9jA6rG.png",
-      "url": "https://memos.juskinbo.cn"
-    },
-    {
-      "index": 4,
-      "title": "Cloud",
-      "icon": "https://s2.loli.net/2023/05/26/R3cJXgif7dbvFA2.png",
-      "url": "https://cloud.juskinbo.cn"
+      "index": 2,
+      "title": "Friends",
+      "icon": "https://s2.loli.net/2023/05/28/wl49m8bWizLcYFt.png",
+      "url": "/friends"
     }
   ],
   "filing": [
@@ -73,6 +61,3 @@ Open the infoconfig.json file in the root directory.
   ]
 }
 ```
-
-
-
