@@ -1,8 +1,8 @@
 # home-juskinbo
 
-![](https://s2.loli.net/2023/05/27/n7SiaAj3pK1wVMQ.png)
+Juskinbo's homepage.
 
-Juskinbo's homepage。
+![](https://s2.loli.net/2023/05/27/n7SiaAj3pK1wVMQ.png)
 
 # Development
 
