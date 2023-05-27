@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="name"><a href="/">Infinite progress</a></div>
+    <div class="name"><a href="/">{{ motto }}</a></div>
     <div class='websites'>
       <a v-for="o in websites" :key="o.title" :href="o.url" class="website"><img :src="o.icon" class="icons"><span
           class="titles">{{ o.title }}</span></a>
@@ -12,6 +12,8 @@
 import { ref, watch } from 'vue'
 import { ElSwitch } from 'element-plus'
 import { Sunny, Moon } from '@element-plus/icons-vue'
+const websites = require('/infoconfig.json').links
+const motto = require('/infoconfig.json').motto
 const now = ref(new Date())
 let value
 if (now.value.getHours() >= 6 && now.value.getHours() < 18) {
@@ -32,12 +34,6 @@ watch(value, (val) => {
   }
 }, { immediate: true })
 
-const websites = [
-  { index: 1, title: 'Home', url: '/', icon: 'https://s2.loli.net/2023/05/26/vamwe9r4CxDb2LQ.png' },
-  { index: 2, title: 'Blog', url: 'https://blog.juskinbo.cn', icon: 'https://s2.loli.net/2023/05/26/Q5yxwOA1MspRbV9.png' },
-  { index: 3, title: 'Memos', url: 'https://memos.juskinbo.cn', icon: 'https://s2.loli.net/2023/05/26/tV5vOPBKY9jA6rG.png' },
-  { index: 4, title: 'Cloud', url: 'https://cloud.juskinbo.cn', icon: 'https://s2.loli.net/2023/05/26/R3cJXgif7dbvFA2.png' }
-]
 </script>
 <style scoped>
 @font-face {

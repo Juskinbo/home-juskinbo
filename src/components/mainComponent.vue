@@ -1,6 +1,6 @@
 <template>
   <div class='introduction'>
-    <h1 style="font-family: brush-script">Juskinbo</h1>
+    <h1 style="font-family: brush-script">{{ name }}</h1>
     <p class="detail">
       Halo! I'm Juskinbo, a front-end developer from China.
       <br>
@@ -33,6 +33,9 @@
     </p>
   </div>
 </template>
+<script setup>
+const name = require('/infoconfig.json').name
+</script>
 <style scoped>
 img {
   height: 19px;

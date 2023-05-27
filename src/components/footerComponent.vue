@@ -1,10 +1,11 @@
 <template>
   <div class="footer">
-    <a href="https://beian.miit.gov.cn/">浙ICP备2022003626号-1</a>
-    <a href="https://www.beian.gov.cn/">浙公网安备 33100202001341号</a>
+    <a v-for="o in filing" :key="o.index" :href="o.url">{{ o.number }}</a>
   </div>
 </template>
-<script>
+<script setup>
+const filing = require('/infoconfig.json').filing
+
 </script>
 <style scoped>
 a {
