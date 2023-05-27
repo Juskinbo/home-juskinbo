@@ -17,48 +17,43 @@
       Find me on
       <br>
       <br>
-      <a href="https://github.com/Juskinbo">GitHub</a>, <a href="https://twitter.com/Juskinbo0326">Twitter</a> 
+      <a href="https://github.com/Juskinbo"><img src="../assets/images/github.svg"><strong>GitHub</strong></a>, <a
+        href="https://twitter.com/Juskinbo0326"><img src="../assets/images/twitter.svg"><strong>Twitter</strong></a>, <a
+        href="https://juskinbo.cn/wechat.JPG"><img src="../assets/images/wechat.svg"><strong>WeChat</strong></a>, <a
+        href="https://qm.qq.com/cgi-bin/qm/qr?k=cJsUIWK9Co-oHZfOsDFBYZe3734oAMvW&noverify=0&personal_qrcode_source=3"><img
+          src="../assets/images/qq.svg"><strong>QQ</strong></a>
       <br>
       <br>
       <br>
       Or send an email.
       <br>
       <br>
-      <a href="mailto:juskinbo@outlook.com">Outlook</a>, <a href="mailto:gjiangyufan@gmail.com">Gmail</a>
+      <a href="mailto:juskinbo@outlook.com"><strong>Outlook</strong></a>, <a
+        href="mailto:gjiangyufan@gmail.com"><strong>Gmail</strong></a>
     </p>
   </div>
 </template>
-<script>
-
-</script>
 <style scoped>
+img {
+  height: 19px;
+  padding-right: 5px;
+}
+
 .introduction {
   letter-spacing: 0.1em;
   font-size: 16px;
-  margin: 5vh auto;
-  /* text-align: center; */
-  
+  margin: 10vh auto;
   height: 100%;
-  /* background-color: #000; */
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* z-index: 999; */
-  /* opacity: 0.5; */
 }
 
 .introduction {
-  background: linear-gradient(to right, #000000, #ffffff);
-  /* 定义渐变颜色 */
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(225, 225, 225));
   -webkit-background-clip: text;
-  /* 将渐变应用于文字 */
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
 }
 
-/* 定义动画效果 */
 .introduction {
   animation: fadeIn 2s ease-in-out;
-  /* 定义动画名称、持续时间和缓动函数 */
 }
 
 @keyframes fadeIn {
@@ -66,20 +61,20 @@
     opacity: 0;
   }
 
-  /* 动画开始时，文字透明度为0 */
   100% {
     opacity: 1;
   }
-
-  /* 动画结束时，文字透明度为1 */
 }
 
 @media screen and (min-width: 768px) {
-  .introduction{
-    width: 60%;
+  .introduction {
+    width: 50%;
   }
 }
 
-@media screen and (max-width: 768px) {.introduction{
+@media screen and (max-width: 768px) {
+  .introduction {
     width: 90%;
-  }}</style>
+  }
+}
+</style>

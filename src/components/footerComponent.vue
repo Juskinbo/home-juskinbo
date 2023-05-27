@@ -14,16 +14,12 @@ a {
 }
 
 .footer {
-  /* 设置最多只显示一行 */
   white-space: nowrap;
   font-size: 12px;
-  /* color: #777; */
   width: 100%;
   text-align: right;
   margin: 0 auto;
-  /* 使得在最底部 */
   position: absolute;
   bottom: 0;
-
 }
 </style>

@@ -4,10 +4,34 @@
     <div class='websites'>
       <a v-for="o in websites" :key="o.title" :href="o.url" class="website"><img :src="o.icon" class="icons"><span
           class="titles">{{ o.title }}</span></a>
+      <el-switch v-model="value" size="small" inline-prompt :active-icon="Sunny" :inactive-icon="Moon" />
     </div>
   </div>
 </template>
 <script setup>
+import { ref, watch } from 'vue'
+import { ElSwitch } from 'element-plus'
+import { Sunny, Moon } from '@element-plus/icons-vue'
+const now = ref(new Date())
+let value
+if (now.value.getHours() >= 6 && now.value.getHours() < 18) {
+  value = ref(true) // 白天
+}
+else {
+  value = ref(false) // 黑夜
+}
+watch(value, (val) => {
+  document.body.classList.forEach(className => {
+    document.body.classList.remove(className);
+  });
+  if (val) {
+    document.body.classList.add('light')
+  }
+  else {
+    document.body.classList.add('dark')
+  }
+}, { immediate: true })
+
 const websites = [
   { index: 1, title: 'Home', url: '/', icon: 'https://s2.loli.net/2023/05/26/vamwe9r4CxDb2LQ.png' },
   { index: 2, title: 'Blog', url: 'https://blog.juskinbo.cn', icon: 'https://s2.loli.net/2023/05/26/Q5yxwOA1MspRbV9.png' },
@@ -18,45 +42,40 @@ const websites = [
 <style scoped>
 @font-face {
   font-family: 'brush-script';
-  src: url('../assets/BrushScript.otf');
+  src: url('../assets/fonts/BrushScript.otf');
+}
+
+.el-switch {
+  --el-switch-on-color: #dcdfe6;
+  --el-switch-off-color: #534d4d;
 }
 
 a {
-  /* 删除下划线 */
   text-decoration: none;
-  /* 不修改颜色 */
   color: inherit;
 }
 
 img {
-  /* 自适应大小 */
   width: auto;
   height: 20px;
 }
 
 .header {
-  /* 所有元素放在同一排 */
   text-align: center;
   align-items: center;
   margin: 0 auto;
   display: flex;
   font-size: 20px;
-  /* 占满一整行 */
   width: 100%;
   margin-top: 3vh;
-  /* position: relative; */
 }
 
 .name {
   font-family: brush-script, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
-  /* 靠左放置 */
-  /* width: 10%; */
   float: left;
   padding-left: 20px;
 }
-
-
 
 .websites {
   color: #777777;
@@ -65,13 +84,7 @@ img {
   margin-right: 0vw;
   right: 0vw;
   float: right;
-  /* list-style: none; */
-  /* 将所有的li放在同一列 */
   display: flex;
-}
-
-.website {
-  padding-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -81,6 +94,14 @@ img {
 
   .titles {
     display: inline;
+  }
+
+  .website {
+    padding-right: 20px;
+  }
+
+  .el-switch {
+    padding-right: 20px;
   }
 }
 
@@ -92,4 +113,13 @@ img {
   .titles {
     display: none;
   }
-}</style>
+
+  .website {
+    padding-right: 10px;
+  }
+
+  .el-switch {
+    padding-right: 10px;
+  }
+}
+</style>

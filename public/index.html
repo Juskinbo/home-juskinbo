@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>Juskinbo' World</title>
-  </head>
-  <body>
-    
-    <div id="app"></div>
-  </body>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="https://s2.loli.net/2023/05/26/2Z7tcyjTpS9ngIY.png" id="icon">
+  <title>Juskinbo' World</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="sakura.js"></script>
+</body>
+<script>
+  const icon = document.getElementById('icon')
+  // 获取当前系统时间
+  const now = new Date()
+  if (now.getHours() >= 6 && now.getHours() < 18) {
+    icon.href = 'https://s2.loli.net/2023/05/26/2Z7tcyjTpS9ngIY.png'
+    document.body.classList.forEach(className => {
+      document.body.classList.remove(className);
+    });
+    document.body.classList.add('light')
+  } else {
+    icon.href = 'https://s2.loli.net/2023/05/26/FP5jhDtNg9WZ3nr.png'
+    document.body.classList.forEach(className => {
+      document.body.classList.remove(className);
+    });
+    document.body.classList.add('dark')
+  }
+</script>
+<style>
+  .dark {
+    background-color: rgb(10, 10, 10);
+    transition: background-color 1.5s ease-out;
+    color: white;
+  }
+
+  .light {
+    background-color: white;
+    transition: background-color 1.5s ease-out;
+    color: rgb(10, 10, 10);
+  }
+</style>
+
 </html>
