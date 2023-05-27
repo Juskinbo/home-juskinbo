@@ -2,6 +2,8 @@
 
 Juskinbo's homepage.
 
+demo: [Juskinbo' World](https://juskinbo.cn)
+
 ![](https://s2.loli.net/2023/05/27/n7SiaAj3pK1wVMQ.png)
 
 # Development
