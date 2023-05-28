@@ -1,32 +1,46 @@
 {
-  "name": "Juskinbo",
-  "motto": "progrès infini",
+  "name": "your name",
+  "motto": "your motto",
   "links": [
     {
       "index": 1,
-      "title": "Blog",
-      "icon": "https://s2.loli.net/2023/05/26/Q5yxwOA1MspRbV9.png",
-      "url": "https://blog.juskinbo.cn"
+      "title": "site title",
+      "icon": "icon url",
+      "url": "site url"
     },
     {
       "index": 2,
-      "title": "Friends",
-      "icon": "https://s2.loli.net/2023/05/28/wl49m8bWizLcYFt.png",
-      "url": "/friends"
+      "title": "site title",
+      "icon": "icon url",
+      "url": "site url"
+    },
+    {
+      "index": 3,
+      "title": "site title",
+      "icon": "icon url",
+      "url": "site url"
     }
   ],
   "filing": [
     {
       "index": 1,
       "name": "ICP",
-      "number": "浙ICP备2022003626号-1",
+      "number": "your site ICP number",
       "url": "https://beian.miit.gov.cn/"
     },
     {
       "index": 2,
       "name": "gongan",
-      "number": "浙公网安备 33100202001341号",
+      "number": "your site gongan number",
       "url": "https://www.beian.gov.cn/"
+    }
+  ],
+  "friends": [
+    {
+      "index": 1,
+      "name": "friend name",
+      "avatar": "friend avatar url",
+      "url": "friend site url"
     }
   ]
 }
