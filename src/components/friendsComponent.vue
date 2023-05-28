@@ -3,8 +3,8 @@
     <h1 style="font-family: brush-script">Friends</h1>
     <div class="grid">
       <div class="friend" v-for="o in friends" :key="o.index" :href="o.url">
-        <el-avatar :size="50" :src="o.avatar"></el-avatar>
-        <span class="name">bs' realm</span>
+        <a :href="o.url" target="_blank"><el-avatar :size="50" :src="o.avatar"></el-avatar></a>
+        <span class="name"><a :href="o.url">{{ o.name }}</a></span>
       </div>
     </div>
 
